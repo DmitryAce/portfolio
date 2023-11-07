@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DmitryAce portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <div class="nav-row">
+          <a href="./index.html" class="logo"
+            ><strong>DmitryAce</strong> portfolio</a>
+
+          <button class="dark-mode-btn">
+            <img
+              src="./img/icons/sun.svg"
+              alt="Light mode"
+              class="dark-mode-btn__icon"
+            />
+            <img
+              src="./img/icons/moon.svg"
+              alt="Dark mode"
+              class="dark-mode-btn__icon"
+            />
+          </button>
+          <button type="button" class="header__menu-switcher menu-switcher" >
+            <img src="./img/flatline.svg" alt class="menu-switcher__line">
+            <img src="./img/flatline.svg" alt class="menu-switcher__line">
+            <img src="./img/flatline.svg" alt class="menu-switcher__line">
+          </button>
+          <ul class="nav-list header__navigation">
+            <li class="nav-list__item">
+              <a href="./index.html" class="nav-list__link">Проекты</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./skills.html" class="nav-list__link">Навыки</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./contacts.html" class="nav-list__link">Контакты</a>
+            </li>
+            <li class="nav-list__item">
+              <a
+                href="./reviews.html"
+                class="nav-list__link nav-list__link--active"
+                >Отзывы</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="section">
+      <div class="container">
+        <h1 class="title-1">Отзывы</h1>
+        <p class="reviews-description">
+          Мне очень важно ваше мнение о моих играх. 
+          Ваша обратная связь помогает мне делать лучшие игры и улучшать игровой опыт для вас.
+          Буду признателен, если вы оставите свой отзыв о любой из моих игр.
+          Чтобы поделиться вашими впечатлениями и отзывами, просто укажите игру, ваше имя и оценку из списка ниже и напишите ваш комментарий.
+          Вы можете поделиться своим мнением о геймплее, графике, звуке или любых других аспектах игры.
+
+          <br/><br/>Спасибо, что играете в мои проекты, и за вашу ценную обратную связь.
+          Вместе мы сделаем мир игр еще более увлекательным и уникальным!
+        </p>
+        <form action="POST" class="contacts__feedback-form feedback-form">
+          <h2 class="title-2">Оставьте отзыв</h2>
+          <div class="reviews-form feedback-form__inputs">
+            <div class="feedback-form__personal-information">
+              <input
+                name="Name"
+                placeholder="Ваше имя"
+                type="text"
+                class="feedback-form__input"
+              />
+              <select
+                name="Email"
+                placeholder="Ваша оценка"
+                type=""
+                class="feedback-form__input"
+              >
+                <option value="">Ваша оценка</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+              </select>
+            </div>
+            <textarea
+              name="Message"
+              placeholder="Отзыв"
+              class="feedback-form__user-message"
+            ></textarea>
+          </div>
+          <button type="submit" class="feedback-form__submit-button link">
+            Отзыв
+          </button>
+        </form>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <div class="review-card swiper-slide">
+              <div class="review-card-header">
+                <h3>Имя клиента</h3>
+                <div class="rate-wrapper">
+                  <p class="rate-count">5/5</p>
+                  <img src="./img/icons/star.svg" alt="img" class="rate-img" />
+                </div>
+              </div>
+              <div class="review-card-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Mollitia tempora beatae ea eum doloribus dolorem repellat
+                  magni ullam distinctio, excepturi numquam. Similique ducimus
+                  accusamus suscipit veniam sed rem adipisci placeat.
+                </p>
+              </div>
+            </div>
+            <div class="review-card swiper-slide">
+                <div class="review-card-header">
+                  <h3>Имя клиента</h3>
+                  <div class="rate-wrapper">
+                    <p class="rate-count">5/5</p>
+                    <img src="./img/icons/star.svg" alt="img" class="rate-img" />
+                  </div>
+                </div>
+                <div class="review-card-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia tempora beatae ea eum doloribus dolorem repellat
+                    magni ullam distinctio, excepturi numquam. Similique ducimus
+                    accusamus suscipit veniam sed rem adipisci placeat.
+                  </p>
+                </div>
+              </div>
+              <div class="review-card swiper-slide">
+                <div class="review-card-header">
+                  <h3>Имя клиента</h3>
+                  <div class="rate-wrapper">
+                    <p class="rate-count">5/5</p>
+                    <img src="./img/icons/star.svg" alt="img" class="rate-img" />
+                  </div>
+                </div>
+                <div class="review-card-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia tempora beatae ea eum doloribus dolorem repellat
+                    magni ullam distinctio, excepturi numquam. Similique ducimus
+                    accusamus suscipit veniam sed rem adipisci placeat.
+                  </p>
+                </div>
+              </div>
+              <div class="review-card swiper-slide">
+                <div class="review-card-header">
+                  <h3>Имя клиента</h3>
+                  <div class="rate-wrapper">
+                    <p class="rate-count">5/5</p>
+                    <img src="./img/icons/star.svg" alt="img" class="rate-img" />
+                  </div>
+                </div>
+                <div class="review-card-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia tempora beatae ea eum doloribus dolorem repellat
+                    magni ullam distinctio, excepturi numquam. Similique ducimus
+                    accusamus suscipit veniam sed rem adipisci placeat.
+                  </p>
+                </div>
+              </div>
+              <div class="review-card swiper-slide">
+                <div class="review-card-header">
+                  <h3>Имя клиента</h3>
+                  <div class="rate-wrapper">
+                    <p class="rate-count">5/5</p>
+                    <img src="./img/icons/star.svg" alt="img" class="rate-img" />
+                  </div>
+                </div>
+                <div class="review-card-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia tempora beatae ea eum doloribus dolorem repellat
+                    magni ullam distinctio, excepturi numquam. Similique ducimus
+                    accusamus suscipit veniam sed rem adipisci placeat.
+                  </p>
+                </div>
+              </div>
+              <div class="review-card swiper-slide">
+                <div class="review-card-header">
+                  <h3>Имя клиента</h3>
+                  <div class="rate-wrapper">
+                    <p class="rate-count">5/5</p>
+                    <img src="./img/icons/star.svg" alt="img" class="rate-img" />
+                  </div>
+                </div>
+                <div class="review-card-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia tempora beatae ea eum doloribus dolorem repellat
+                    magni ullam distinctio, excepturi numquam. Similique ducimus
+                    accusamus suscipit veniam sed rem adipisci placeat.
+                  </p>
+                </div>
+              </div>
+              <div class="review-card swiper-slide">
+                <div class="review-card-header">
+                  <h3>Имя клиента</h3>
+                  <div class="rate-wrapper">
+                    <p class="rate-count">5/5</p>
+                    <img src="./img/icons/star.svg" alt="img" class="rate-img" />
+                  </div>
+                </div>
+                <div class="review-card-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia tempora beatae ea eum doloribus dolorem repellat
+                    magni ullam distinctio, excepturi numquam. Similique ducimus
+                    accusamus suscipit veniam sed rem adipisci placeat.
+                  </p>
+                </div>
+              </div>
+          </div>
+          <!-- If we need pagination -->
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <ul class="social">
+            <li class="social__item">
+              <a href="#!"><img src="./img/icons/vk.svg" alt="Link" /></a>
+            </li>
+            <li class="social__item">
+              <a href="#!"
+                ><img src="./img/icons/instagram.svg" alt="Link"
+              /></a>
+            </li>
+            <li class="social__item">
+              <a href="#!"><img src="./img/icons/twitter.svg" alt="Link" /></a>
+            </li>
+            <li class="social__item">
+              <a href="#!"><img src="./img/icons/gitHub.svg" alt="Link" /></a>
+            </li>
+            <li class="social__item">
+              <a href="#!"><img src="./img/icons/linkedIn.svg" alt="Link" /></a>
+            </li>
+          </ul>
+          <div class="copyright">
+            <p>© 2023 dmitryace-dev.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/swiper.js"></script>
+  </body>
+</html>
