@@ -35,49 +35,54 @@
 
     <main class="section">
         <div class="container">
+           
                 <h1 class="title-1">Контакты</h1>
-
-                <ul class="content-list">
-                    <li class="content-list__item">
-                        <h2 class="title-2">Местоположение</h2>
-                        <p>Подольск, Россия</p>
-                    </li>
-                    <li class="content-list__item">
-                        <h2 class="title-2">Telegram / WhatsApp</h2>
-                        <p><a href="tel:+79051234567">+7 (985) 883-85-75</a></p>
-                    </li>
-                    <li class="content-list__item">
-                        <h2 class="title-2">Email</h2>
-                        <p><a href="mailto:webdev@protonmail.com">dm1tryacedev@list.ru</a></p>
-                    </li>
-                </ul>
-                <form action="POST" class="contacts__feedback-form feedback-form">
-                    <h2 class="title-2">Свяжитесь со мной!</h2>
-                    <div class="feedback-form__inputs">
-                      <div class="feedback-form__personal-information">
-                        <input
-                          name="Name"
-                          placeholder="Ваше имя"
-                          type="text"
-                          class="feedback-form__input"
-                        />
-                        <input
-                          name="Email"
-                          placeholder="Ваша почта"
-                          type="email"
-                          class="feedback-form__input"
-                        />
-                      </div>
-                      <textarea
-                        name="Message"
-                        placeholder="Введите ваше сообщение"
-                        class="feedback-form__user-message"
-                      ></textarea>
+                <div class="contacts-content-wrapper">
+                    <div>
+                        <ul class="content-list">
+                            <li class="content-list__item">
+                                <h2 class="title-2">Местоположение</h2>
+                                <p>Подольск, Россия</p>
+                            </li>
+                            <li class="content-list__item">
+                                <h2 class="title-2">Telegram / WhatsApp</h2>
+                                <p><a href="tel:+79051234567">+7 (985) 883-85-75</a></p>
+                            </li>
+                            <li class="content-list__item">
+                                <h2 class="title-2">Email</h2>
+                                <p><a href="mailto:webdev@protonmail.com">dm1tryacedev@list.ru</a></p>
+                            </li>
+                        </ul>
                     </div>
-                    <button type="submit" class="feedback-form__submit-button link">
-                      Отправить
-                    </button>
-                  </form>
+                    <form action="POST" class="contacts__feedback-form feedback-form">
+                        <h2 class="title-2">Свяжитесь со мной!</h2>
+                        <div class="feedback-form__inputs">
+                          <div class="feedback-form__personal-information">
+                            <input
+                              name="Name"
+                              placeholder="Ваше имя"
+                              type="text"
+                              class="feedback-form__input"
+                            />
+                            <input
+                              name="Email"
+                              placeholder="Ваша почта"
+                              type="email"
+                              class="feedback-form__input"
+                            />
+                          </div>
+                          <textarea
+                            name="Message"
+                            placeholder="Введите ваше сообщение"
+                            class="feedback-form__user-message"
+                          ></textarea>
+                        </div>
+                        <button type="submit" class="feedback-form__submit-button link">
+                          Отправить
+                        </button>
+                      </form>
+                </div>
+                
         </div>
 
     </main>

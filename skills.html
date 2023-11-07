@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>DmitryAce portfolio</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -95,7 +96,7 @@
             
                 </ul>
 
-                <iframe width="100%" height="720px" src="https://www.youtube.com/embed/ABmGRNKl42Q?si=C0lRmIAj6ksVOPwr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe data-aos="zoom-in" width="100%" height="720px" src="https://www.youtube.com/embed/ABmGRNKl42Q?si=C0lRmIAj6ksVOPwr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <p>^</p>
                 <p>|</p>
                 <p>Здесь будет видео обзор моих навыков и проектов</p>
@@ -120,7 +121,10 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/main.js"></script>
-
+    <script>
+        AOS.init({duration: 9000,});
+    </script>
 </body>
 </html>
