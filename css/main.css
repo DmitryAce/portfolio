@@ -13,7 +13,9 @@ font-family: 'Poppins', sans-serif;
 * {
     border: 1px solid red;
 }*/
-
+iframe {
+  margin-top: 60px;
+}
 /*Определяем пользовательские CSS переменные в корневом селекторе :root*/
 :root {
 
@@ -81,7 +83,6 @@ html, body {
 }
 
 .container-skills{
-  gap: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -448,9 +449,7 @@ html, body {
 
 .project {
     max-width: 370px;
-    background-color: var(--project-card-bg);
-    box-shadow: var(--box-shadow);
-    border-radius: 10px;
+    background-color: transparent;
 }
 
 .project p {
@@ -884,4 +883,93 @@ option {
 }
 
 
+.skills {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.skill {
+  width: 100%;
+  background-color: var(--header-bg);
+  padding: 20px 25px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill:nth-child(1)
+{
+  background-color: #004242;
+}
+.skill:nth-child(2)
+{
+  background-color: #006262;
+}
+.skill:nth-child(3)
+{
+  background-color: #50C878;
+}
+.skill:nth-child(4)
+{
+  background-color: #20B2AA;
+}
+.skill:nth-child(5)
+{
+  background-color: #318CE7;
+}
+.skill:nth-child(6)
+{
+  background-color: #9457EB;
+}
+.skill:nth-child(7)
+{
+  background-color: #CC397B;
+}
+.skill:nth-child(8)
+{
+  background-color: #EB4C42;
+}
+.skill:nth-child(9)
+{
+  background-color: #F07427;
+}
+
+.skill__title {
+  font-size: 24px;
+  font-weight: 600;
+  user-select: none;
+}
+/* Убираем стандартный маркер Chrome */
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary::after{
+  content: "+";
+  position: absolute;
+  right: 0;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.2);
+}
+
+details summary {
+  position: relative;
+}
+
+details[open] summary::after {
+  transform: rotate(45deg) scale(1.2);
+}
+
+/* Убираем стандартный маркер Firefox */
+details > summary {
+  list-style: none;
+}
+
+.skill__text {
+  margin-top: 30px;
+  font-size: 18px;
+  text-align: justify;
+}
 
