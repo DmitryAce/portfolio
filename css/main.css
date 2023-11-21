@@ -74,6 +74,10 @@ html, body {
     color: var(--text-color);
 }
 
+main, header, footer {
+  overflow: hidden !important;
+}
+
 /* General */
 
 .container {
