@@ -1,26 +1,32 @@
+// Создание нового экземпляра Swiper с указанием селектора контейнера для слайдера
 const swiper = new Swiper('.swiper', {
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+  // Настройки навигации слайдера (кнопки "вперёд" и "назад")
+  navigation: {
+      nextEl: '.swiper-button-next', // Селектор кнопки "вперёд"
+      prevEl: '.swiper-button-prev', // Селектор кнопки "назад"
+  },
+  // Количество отображаемых слайдов одновременно
+  slidesPerView: 3,
+  // Расстояние между слайдами в пикселях
+  spaceBetween: 30,
+  // Отключение возможности перелистывания слайдов путём касания (только кнопки для навигации)
+  simulateTouch: false,
+  // Настройки автопрокрутки слайдов
+  autoplay: {
+      delay: 1500, // Задержка между переключением слайдов в миллисекундах
+      stopOnLastSlide: false, // Остановка автопрокрутки на последнем слайде
+      disableOnInteraction: true, // Отключение автопрокрутки при взаимодействии пользователя со слайдером
+  },
+  // Настройки слайдера для различных размеров экрана (брейкпоинты)
+  breakpoints: {
+      320: {
+          slidesPerView: 1, // Количество слайдов при ширине экрана 320px и менее
       },
-      slidesPerView: 3,
-      spaceBetween: 30,
-      simulateTouch: false,
-      autoplay: {
-        delay: 1500,
-        stopOnLastSlide: false,
-        disableOnInteraction: true,
+      768: {
+          slidesPerView: 2, // Количество слайдов при ширине экрана от 321px до 768px
       },
-      breakpoints: {
-        320: {
-            slidesPerView: 1,
-        },
-        768: {
-            slidesPerView: 2,
-        },
-        1023: {
-            slidesPerView: 3,
-        },
-
-      }
-  });
+      1023: {
+          slidesPerView: 3, // Количество слайдов при ширине экрана от 769px до 1023px
+      },
+  }
+});

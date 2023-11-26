@@ -92,7 +92,6 @@ main, header, footer {
   align-items: center;
 }
 
-
 .none {
     display: none !important;
 }
@@ -593,10 +592,6 @@ option {
   width: 300px;
   background-color: var(--project-card-bg);
 }
-.swiper-button-prev {
-
-}
-
 
 
 .review-card-header {
